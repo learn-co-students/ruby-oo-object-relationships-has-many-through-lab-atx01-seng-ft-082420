@@ -16,7 +16,7 @@ class Patient
     end
 
     def appointments
-        Appointment.all.select {|app| app if app.patient == self}
+        Appointment.all.select {|appointment| appointment if appointment.patient == self}
             # binding.pry
     end
 
